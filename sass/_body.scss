@@ -12,6 +12,21 @@ body{
 }
 
 
+.divConference {
+    background-color:white !important;
+}
+
+.divConference h4{
+    position:absolute; 
+    left:12%;
+}
+.divConference p{
+    display:inline;
+    margin-left:2%;
+   
+}
+
+
 @keyframes animationRectangle1{
     from{
         transform:translateX(-1500px);

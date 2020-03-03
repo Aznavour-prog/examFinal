@@ -30,10 +30,7 @@ get_header();
 		endwhile; // End of the loop.
 	
  $args = array(
-     "category_name"=>"nouvelle",
-    "posts_per_page"=>3,
-    "orderby"=>"date",
-    "order"=>"ASC");
+     "category_name"=>"nouvelle");
  // The Query
 
  
@@ -48,7 +45,7 @@ get_header();
        
         $query1->the_post();
         
-        echo '<h4>' . get_the_title() . '</h4>';
+        echo '<h4>' . get_the_title() . ' - ' . get_the_date() . '</h4>';
         echo '<p>' . the_excerpt() . '</p>';
     }
  
@@ -62,7 +59,7 @@ get_header();
   */
  wp_reset_postdata();
  $args2 = array(
-    "category_name"=>"evenement");
+    "category_name"=>"conferences");
 
  /*The 2nd Query (without global var) */
  $query2 = new WP_Query( $args2 );
@@ -70,13 +67,15 @@ get_header();
 
 $category = get_the_category($query2->post->ID);
 
-echo "<h6>".category_description($category[0])."</h6>";
+echo "<h1>".category_description($category[0])."</h1>";
  // The 2nd Loop
  while ( $query2->have_posts() ) {
      $query2->the_post();
-     
-     echo '<h4>' . get_the_title() . '</h4>';
+     echo '<div class="divConference" style="background-color:white; padding:1%;">';
+     echo '<h4>' . get_the_title() . ' - ' . get_the_date() . '</h4>';
      echo get_the_post_thumbnail(null,"thumbnail");
+     echo  the_excerpt();
+     echo '</div>';
  }
   
  // Restore original Post Data

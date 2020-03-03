@@ -85,6 +85,20 @@ body {
           animation-timing-function: ease-in-out;
 }
 
+.divConference {
+  background-color: white !important;
+}
+
+.divConference h4 {
+  position: absolute;
+  left: 12%;
+}
+
+.divConference p {
+  display: inline;
+  margin-left: 2%;
+}
+
 @-webkit-keyframes animationRectangle1 {
   from {
     -webkit-transform: translateX(-1500px);
