@@ -22,8 +22,8 @@ do_action( 'astral_top_banner' );
                 
                 wp_reset_postdata();
                 $args2 = array(
-                   "category_name"=>"evenement",
-                   "order"=>"ASC",
+                "category_name"=>"evenement",
+                "order"=>"ASC",
                 "orderBy"=>"date");
                
                 /*The 2nd Query (without global var) */
@@ -38,9 +38,9 @@ do_action( 'astral_top_banner' );
                 $iPostId = $query2->post->ID;
                 
                 while ( $query2->have_posts()) {
-                    $oPostId = $query2->post->ID;
+                    
                     $oMois = get_the_date("m");
-                    var_dump($oMois%10);
+                    var_dump($query2->post->post_date);
                     switch($oMois%10){
                         case 0 :
                             $query2->the_post();
