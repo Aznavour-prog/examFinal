@@ -95,8 +95,39 @@ body {
 }
 
 .divConference p {
-  display: inline;
+  display: inline-block;
   margin-left: 2%;
+  width: 35%;
+  height: 180px;
+  padding-top: 3%;
+}
+
+.divConference img {
+  float: left;
+  clear: both;
+}
+
+.oFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.oPost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @-webkit-keyframes animationRectangle1 {
@@ -125,5 +156,12 @@ body {
             transform: translateX(0px);
     opacity: 1;
   }
+}
+
+.oGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 /*# sourceMappingURL=style.css.map */

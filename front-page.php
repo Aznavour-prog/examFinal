@@ -29,26 +29,6 @@ get_header();
 
 		endwhile; // End of the loop.
 	
- $args = array(
-     "category_name"=>"nouvelle");
- // The Query
-
- 
- $query1 = new WP_Query( $args );
-
-
- $category = get_the_category($query1->post->ID);
-
- echo "<h6>".category_description($category[0])."</h6>";
-
-    while ( $query1->have_posts() ) {
-       
-        $query1->the_post();
-        
-        echo '<h4>' . get_the_title() . ' - ' . get_the_date() . '</h4>';
-        echo '<p>' . the_excerpt() . '</p>';
-    }
- 
  
   
  /* Restore original Post Data 
@@ -81,6 +61,29 @@ echo "<h1>".category_description($category[0])."</h1>";
  // Restore original Post Data
  wp_reset_postdata();
 
+
+ $args = array(
+    "category_name"=>"nouvelle");
+// The Query
+
+
+$query1 = new WP_Query( $args );
+
+
+$category = get_the_category($query1->post->ID);
+
+echo "<h6>".category_description($category[0])."</h6>";
+    echo '<div class="oFlex">';
+   while ( $query1->have_posts() ) {
+        echo '<div class ="oPost">';
+       $query1->the_post();
+       
+       echo '<h4>' . get_the_title()  . '</h4>';
+       echo get_the_post_thumbnail(null,"thumbnail");
+       echo '</div>';
+   }
+   echo '</div>';
+
  ?>
 
  
@@ -90,4 +93,5 @@ echo "<h1>".category_description($category[0])."</h1>";
 
 <?php
 get_sidebar();
+
 get_footer();
