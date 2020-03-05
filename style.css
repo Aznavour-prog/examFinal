@@ -179,7 +179,7 @@ h1 p {
 
 .oGrid div {
   width: 100%;
-  height: 100px;
+  height: auto;
   border-radius: 5px;
   margin-top: 5px;
   padding: 3px;
@@ -199,7 +199,7 @@ h1 p {
   text-align: center;
   width: 100%;
   height: 10px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .septembre {

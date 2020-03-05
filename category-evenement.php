@@ -40,6 +40,7 @@ do_action( 'astral_top_banner' );
                     case 0:echo "<div class='septembre' style='grid-area:".$oJour."/".($oMois%9 + 1)."/".($oJour+1)."/".($oMois%9 + 1).";' id=".get_the_ID().">";
                     echo "<p>" . get_the_date("j") ." - ".get_the_date("m"). " - ".get_the_date("y") ."</p>";
                     echo "<p>".get_the_title()."</p>";
+                    echo "<p>".$oJour."/".($oMois%9 + 1)."/".($oJour+1)."/".($oMois%9 + 1)."</p>";
                     echo "</div>";
                     break;
 
@@ -48,6 +49,7 @@ do_action( 'astral_top_banner' );
                     echo "<div class='octobre' style='grid-area:".$oJour."/".($oMois%9 + 1)."/".($oJour+1)."/".($oMois%9 + 1).";' id=".get_the_ID().">";
                     echo "<p>" . get_the_date("j") ." - ".get_the_date("m"). " - ".get_the_date("y") ."</p>";
                     echo "<p>".get_the_title()."</p>";
+                    echo "<p>".$oJour."/".($oMois%9 + 1)."/".($oJour+1)."/".($oMois%9 + 1)."</p>";
                     echo "</div>";
                     break;
                     
@@ -57,21 +59,13 @@ do_action( 'astral_top_banner' );
                     echo "<div class='novembre' style='grid-area:".$oJour."/".($oMois%9 + 1)."/".($oJour+1)."/".($oMois%9 + 1).";' id=".get_the_ID().">";
                     echo "<p>" . get_the_date("j") ." - ".get_the_date("m"). " - ".get_the_date("y") ."</p>";
                     echo "<p>".get_the_title()."</p>";
+                    echo "<p>".$oJour."/".($oMois%9 + 1)."/".($oJour+1)."/".($oMois%9 + 1)."</p>";
                     echo "</div>";
                     break;
                     }
                     
                     }
                            
-                            
-                     
-                        
-
-                        
-                    
-                    
-                
-                 
 
                 echo '</div>';
             ?>
