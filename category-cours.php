@@ -45,7 +45,7 @@ $query2 = new WP_Query( $args2 );
                 echo '<div class="oGrid2">';
                 // The 2nd Loop
                 $compte = 0;
-                echo '<div style="grid-area:1/1/2/1">Environnement</div><div style="grid-area:1/2/2/2">Animation</div><div style="grid-area:1/3/2/3">Design</div><div style="grid-area:1/4/2/4">Programmation</div><div style="grid-area:1/5/2/5">Intégration</div>';
+                echo '<div class="titre" style="grid-area:1/1/2/1">Environnement</div><div class="titre" style="grid-area:1/2/2/2">Animation</div><div class="titre" style="grid-area:1/3/2/3">Design</div><div class="titre" style="grid-area:1/4/2/4">Programmation</div><div class="titre" style="grid-area:1/5/2/5">Intégration</div>';
                 while ($query2->have_posts() ) {
                     
                     $query2->the_post();
@@ -54,7 +54,7 @@ $query2 = new WP_Query( $args2 );
                     $oSession = (int)substr(get_the_title(),4,1) + 1;
                     $oDomaine = (int)substr(get_the_title(),5,1) ;
                     
-                    echo '<div id=cours'.$compte.' style="grid-area:'.$oSession.'/'.$oDomaine.'/'.($oSession+1).'/'.$oDomaine.';">';
+                    echo '<div class="domaine-'.$oDomaine.'"id=cours'.$compte.' style="grid-area:'.$oSession.'/'.$oDomaine.'/'.($oSession+1).'/'.$oDomaine.';">';
                         echo '<a class="oCours"  href='.get_permalink().'>' . substr(get_the_title(),0,7) .  '</a>';
                     echo '</div>';
                     
@@ -69,4 +69,4 @@ $query2 = new WP_Query( $args2 );
         </div>
     </section>
 <?php
-get_footer();
+echo 'Épreuve final - Veille technologique';

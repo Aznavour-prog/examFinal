@@ -38,44 +38,86 @@
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(100px, 3fr));
     grid-template-rows:repeat(auto-fit,minmax(100px, 3fr));
+    column-gap: 5px;
+    row-gap: 5px;
     justify-items: center;
+    background-color:lightslategrey;
     border:1px solid black;
-    padding:5%;
+    
 }
 
 .oGrid2 div{
-    height:50px;
+    height:40px;
     display:block;
     width:100%;
     text-align:center;
-    
+    margin-bottom:1%;
+}
+.domaine-1{
+    background-color:blue;
+    a{
+        color:$couleur_blanche;
+    }
+}
+.domaine-2{
+    background-color:rgb(42, 42, 255);
+    a{
+        color:$couleur_blanche;
+    }
+}
+.domaine-3{
+    background-color:rgb(92, 92, 255);
+    a{
+        color:$couleur_blanche;
+    }
+}
+.domaine-4{
+    background-color:rgb(116, 116, 255);
+    a{
+        color:$couleur_blanche;
+    }
+}
+.domaine-5{
+    background-color:rgb(167, 167, 253);
+    a{
+        color:$couleur_blanche;
+    }
+}
+
+.titre{
+    @include rayure();
+    color:$couleur_noir;
+    height:100% !important;
+    line-height: 100%;
+    font-size:1.5em;
+    width:100%;
 }
 #cours2{
-    margin-top:15%;
+    margin-top:17%;
 }
 #cours10{
-    margin-top:15%;
+    margin-top:17%;
 }
 #cours12{
-    margin-top:15%;
+    margin-top:17%;
 }
 #cours14{
-    margin-top:30%;
+    margin-top:32%;
 }
 #cours19{
-    margin-top:15%;
+    margin-top:17%;
 }
 #cours20{
-    margin-top:30%;
+    margin-top:32%;
 }
 #cours8{
-    margin-top:15%;
+    margin-top:17%;
 }
 #cours24{
-    margin-top:15%;
+    margin-top:17%;
 }
 #cours16{
-    margin-top:15%;
+    margin-top:17%;
 }
 
 

@@ -108,7 +108,7 @@ body {
 }
 
 .oCours:hover {
-  color: blue;
+  color: black;
 }
 
 .oCours:active {
@@ -243,52 +243,106 @@ h1 p {
       grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
   -ms-grid-rows: (minmax(100px, 3fr))[auto-fit];
       grid-template-rows: repeat(auto-fit, minmax(100px, 3fr));
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  row-gap: 5px;
   justify-items: center;
+  background-color: lightslategrey;
   border: 1px solid black;
-  padding: 5%;
 }
 
 .oGrid2 div {
-  height: 50px;
+  height: 40px;
   display: block;
   width: 100%;
   text-align: center;
+  margin-bottom: 1%;
+}
+
+.domaine-1 {
+  background-color: blue;
+}
+
+.domaine-1 a {
+  color: white;
+}
+
+.domaine-2 {
+  background-color: #2a2aff;
+}
+
+.domaine-2 a {
+  color: white;
+}
+
+.domaine-3 {
+  background-color: #5c5cff;
+}
+
+.domaine-3 a {
+  color: white;
+}
+
+.domaine-4 {
+  background-color: #7474ff;
+}
+
+.domaine-4 a {
+  color: white;
+}
+
+.domaine-5 {
+  background-color: #a7a7fd;
+}
+
+.domaine-5 a {
+  color: white;
+}
+
+.titre {
+  background-color: gray;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255, 255, 255, 0.5) 35px, rgba(255, 255, 255, 0.5) 70px);
+  color: black;
+  height: 100% !important;
+  line-height: 100%;
+  font-size: 1.5em;
+  width: 100%;
 }
 
 #cours2 {
-  margin-top: 15%;
+  margin-top: 17%;
 }
 
 #cours10 {
-  margin-top: 15%;
+  margin-top: 17%;
 }
 
 #cours12 {
-  margin-top: 15%;
+  margin-top: 17%;
 }
 
 #cours14 {
-  margin-top: 30%;
+  margin-top: 32%;
 }
 
 #cours19 {
-  margin-top: 15%;
+  margin-top: 17%;
 }
 
 #cours20 {
-  margin-top: 30%;
+  margin-top: 32%;
 }
 
 #cours8 {
-  margin-top: 15%;
+  margin-top: 17%;
 }
 
 #cours24 {
-  margin-top: 15%;
+  margin-top: 17%;
 }
 
 #cours16 {
-  margin-top: 15%;
+  margin-top: 17%;
 }
 
 .septembre {
