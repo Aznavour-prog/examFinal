@@ -16,6 +16,12 @@ get_header();
 do_action( 'astral_top_banner' );
 
 ?>
+
+<nav class="menuHeader">
+    <a href='http://localhost/vcd_veille/category/cours/'>Cours</a>
+    <a href='http://localhost/vcd_veille/category/nouvelle/'>Nouvelle</a>
+    <a href='http://localhost/vcd_veille/category/evenement/'>Evenement</a>
+</nav>
 	<section class="align-blog" id="blog">
         <div class="container">
             <?php

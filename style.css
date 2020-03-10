@@ -66,6 +66,18 @@ li a:after {
   transition: 0.5s all;
 }
 
+.menuHeader {
+  margin-left: 15%;
+  margin-top: 3%;
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 p {
   font-weight: bold;
 }
@@ -87,6 +99,20 @@ body {
 
 .lirePost {
   background-color: lightgreen;
+}
+
+.oCours {
+  text-decoration: underline;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.oCours:hover {
+  color: blue;
+}
+
+.oCours:active {
+  color: red !important;
 }
 
 .active {

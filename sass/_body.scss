@@ -16,6 +16,19 @@ body{
 }
 
 
+.oCours{
+    text-decoration: underline;
+    transition:all 0.5s;
+}
+
+.oCours:hover{
+    color:blue;
+}
+
+.oCours:active{
+    color:red !important;
+}
+
 .active{
     background-color:red;
 }
