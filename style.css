@@ -85,6 +85,14 @@ body {
           animation-timing-function: ease-in-out;
 }
 
+.lirePost {
+  background-color: lightgreen;
+}
+
+.active {
+  background-color: red;
+}
+
 .divConference {
   background-color: white !important;
 }
