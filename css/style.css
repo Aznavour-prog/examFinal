@@ -158,11 +158,48 @@ body {
   }
 }
 
+h1 p {
+  font-size: 1.3em;
+  text-align: center;
+}
+
 .oGrid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[30];
+      grid-template-rows: repeat(30, 1fr);
+  height: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgba(255, 128, 128, 0.205);
+  padding: 5px;
+}
+
+.oGrid div {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.oGrid div p {
+  text-align: center;
+  width: 100%;
+  height: 10px;
+  margin-top: 15px;
 }
 
 .septembre {
