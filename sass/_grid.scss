@@ -34,6 +34,53 @@
 }
 
 
+.oGrid2 {
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px, 3fr));
+    grid-template-rows:repeat(auto-fit,minmax(100px, 3fr));
+    justify-items: center;
+    border:1px solid black;
+    padding:5%;
+}
+
+.oGrid2 div{
+    height:50px;
+    display:block;
+    width:100%;
+    text-align:center;
+    
+}
+#cours2{
+    margin-top:15%;
+}
+#cours10{
+    margin-top:15%;
+}
+#cours12{
+    margin-top:15%;
+}
+#cours14{
+    margin-top:30%;
+}
+#cours19{
+    margin-top:15%;
+}
+#cours20{
+    margin-top:30%;
+}
+#cours8{
+    margin-top:15%;
+}
+#cours24{
+    margin-top:15%;
+}
+#cours16{
+    margin-top:15%;
+}
+
+
+
+
 
 .septembre {
 
